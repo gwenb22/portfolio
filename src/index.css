@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap');
+
+@theme {
+  --font-oswald: 'Oswald', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  
+  --color-design-cyan: #66D9EF;
+  --color-ecomm-yellow: #FFD700;
+  --color-motion-orange: #FFA500;
+  --color-ux-pink: #FF69B4;
+  --color-marketing-red: #9b1d20;
+  --color-grid-bg: #F0F0F0;
+  --color-card-bg: #1a1a1a;
+  --color-border-dark: #1a1a1a;
+  --color-text-secondary: #F0F0F0;
+}
+
+@layer base {
+  body {
+    @apply bg-[#111111] text-white font-inter overflow-x-hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-oswald uppercase;
+  }
+}
+
+@utility text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+}
+/* Force rebuild */
