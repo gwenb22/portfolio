@@ -6,7 +6,7 @@ const Header = () => {
         <header className="flex justify-between items-center py-6 px-10 container mx-auto">
             <Link to="/" className="flex items-center gap-2">
                 <div className="leading-tight text-sm font-medium">
-                    <div>Portfolio</div>
+                    <div>Gwenaëlle Besson</div>
                 </div>
             </Link>
 
