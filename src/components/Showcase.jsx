@@ -82,19 +82,19 @@ const Showcase = () => {
                     <div className="font-black text-lg leading-tight">BRANDING &</div>
                     <div className="font-black text-lg leading-tight mb-2">IDENTITÉ</div>
                     <div className="flex justify-between items-center border-t border-black pt-1">
-                        <span className="text-xl">©'25</span>
+                        <span className="text-xl">©'26</span>
                         <span className="text-xl">✶</span>
                     </div>
                 </Sticker>
 
-                {/* NEW STICKER: BUT MMI */}
+                {/* NEW STICKER: FREELANCE */}
                 <Sticker
                     className="absolute top-1/2 left-[35%] -translate-y-1/2 bg-white text-black px-5 py-3 rounded-none border-2 border-black -rotate-6 z-30"
                     rotation={6}
                     delay={0.9}
                 >
-                    <div className="font-black text-3xl uppercase">BUT MMI</div>
-                    <div className="text-xs font-mono border-t border-black pt-1 mt-1">MULTIMÉDIA & INTERNET</div>
+                    <div className="font-black text-3xl uppercase">FREELANCE</div>
+                    <div className="text-xs font-mono border-t border-black pt-1 mt-1">COMMUNICATION & STRATÉGIE</div>
                 </Sticker>
 
                 {/* NEW STICKER: Créativité */}

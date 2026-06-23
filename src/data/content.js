@@ -12,7 +12,6 @@ import felinesLogoAnim from '../assets/projects/felines-minervois/logo-anim.mp4'
 import hackathonHero from '../assets/projects/hackathon-2025/hero.png';
 import hackathonImg1 from '../assets/projects/hackathon-2025/img1.png';
 import hackathonVideo from '../assets/projects/hackathon-2025/img3.mp4';
-import hackathonMov from '../assets/projects/hackathon-2025/img2.mov';
 
 // Kimiyo Images
 import kimiyoHero from '../assets/projects/kimiyo/hero.png';
@@ -31,16 +30,17 @@ import casaImg6 from '../assets/projects/casa-del-gusto/img6.png';
 
 export const profile = {
   name: "Gwenaëlle Besson",
-  role: "Étudiante MMI & Freelance",
+  role: "Freelance Communication & Création",
   tagline: "Communication. Création. Digital.",
   location: "Béziers, France",
   email: "gwenaellebesson.pro@gmail.com",
   phone: "06 95 72 27 62",
   social: {
-    linkedin: "gwenaellebesson"
+    linkedin: "https://www.linkedin.com/in/gwenaellebesson",
+    instagram: "https://www.instagram.com/gwenaelle.besson/"
   },
   bio: [
-    "Étudiante en BUT MMI, ayant une grande capacité d'organisation et de prise d'initiative. Je suis extrêmement motivée pour développer mes compétences et évoluer professionnellement.",
+    "Professionnelle freelance en communication, ayant fini ma formation en Métiers du Multimédia et de l'Internet, j'accompagne les marques, entreprises et associations dans leur communication globale avec créativité et rigueur.",
     "Passionnée par le numérique, j'allie stratégie, créativité et technique pour donner vie à des projets porteurs de sens.",
     "Mon objectif : comprendre le besoin, structurer la réponse et la concrétiser avec efficacité."
   ],
@@ -48,7 +48,7 @@ export const profile = {
     "Esprit d'équipe et autonomie",
     "Relation client",
     "Capacité à travailler sous pression",
-    "Polyvalence MMI complète"
+    "Polyvalence en communication & création",
   ]
 };
 
@@ -81,7 +81,7 @@ export const projects = [
     year: "2025",
     tags: ["Gestion", "Client", "Autonomie"],
     heroTag: "Projet Personnel",
-    context: "En parallèle de mes études en BUT MMI, j’ai lancé mon entreprise afin de travailler sur des projets réels, confronter mes compétences aux besoins du terrain et développer une approche professionnelle complète.",
+    context: "Forte de ma formation en communication digitale, j’ai lancé mon entreprise afin de travailler sur des projets réels, confronter mes compétences aux besoins du terrain et développer une approche professionnelle complète.",
     objectives: [
       "Accompagner des marques, commerces et projets dans leur communication digitale",
       "Proposer des solutions concrètes, adaptées et efficaces",
@@ -139,8 +139,8 @@ export const projects = [
     image: logoTH, // Added image property
     year: "Stage 2025",
     tags: ["Rédaction", "Storytelling", "Vin"],
-    heroTag: "Stage BUT MMI2",
-    context: "Terra Hominis est une entreprise spécialisée dans le financement participatif viticole. J’ai intégré l’équipe dans le cadre de mon stage de BUT MMI2, ensuite prolongé par un CDD, pour valoriser les projets, vignerons et associés.",
+    heroTag: "Stage & CDD",
+    context: "Terra Hominis est une entreprise spécialisée dans le financement participatif viticole. J’ai intégré l’équipe dans le cadre de mon stage de fin d'études, ensuite prolongé par un CDD, pour valoriser les projets, vignerons et associés.",
     objectives: [
       "Humaniser la communication de la marque",
       "Mettre en avant les événements, rencontres et valeurs de Terra Hominis",
@@ -199,12 +199,6 @@ export const projects = [
       {
         src: hackathonVideo,
         caption: "Animation des prix",
-        isLarge: true,
-        isVideo: true
-      },
-      {
-        src: hackathonMov,
-        caption: "Making Of",
         isLarge: true,
         isVideo: true
       }

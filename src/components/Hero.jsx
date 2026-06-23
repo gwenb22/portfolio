@@ -22,7 +22,7 @@ const Hero = () => {
                 >
                     <p>
                         Derrière chaque projet se cache une histoire à raconter.
-                        Étudiante en Métiers du Multimédia et de l'Internet, je mets la création et la stratégie au service des marques, des associations et des projets qui ont quelque chose à dire.
+                        Professionnelle freelance en communication, je mets la création et la stratégie au service des marques, des associations et des projets qui ont quelque chose à dire.
                     </p>
                 </motion.div>
 

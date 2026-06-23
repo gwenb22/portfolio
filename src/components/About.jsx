@@ -16,7 +16,7 @@ const About = () => {
                             Passionnée par le numérique en général, j'ai toujours aimé créer et comprendre comment les choses fonctionnent.
                         </p>
                         <p>
-                            Aujourd'hui étudiante en <span className="font-bold bg-design-cyan px-1">BUT MMI</span> (Métiers du Multimédia et de l'Internet), je touche à tout : développement web, design graphique, communication...
+                            Aujourd'hui professionnelle freelance en communication, ayant fini ma formation en Métiers du Multimédia et de l'Internet, je touche à tout : développement web, design graphique, stratégie digitale...
                         </p>
                         <p>
                             Mon objectif : concevoir des expériences utilisateurs fluides et esthétiques, sans jamais perdre de vue le message.
@@ -45,7 +45,7 @@ const About = () => {
                                 <div className="z-10 text-center p-8">
                                     <span className="text-4xl">👋</span>
                                     <h3 className="font-bold text-2xl mt-4">Gwenaëlle Besson</h3>
-                                    <p className="text-sm text-gray-500 uppercase mt-2">Etudiante MMI</p>
+                                    <p className="text-sm text-gray-500 uppercase mt-2">Freelance Communication</p>
                                 </div>
                             </div>
                         )}

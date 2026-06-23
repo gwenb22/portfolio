@@ -1,11 +1,12 @@
 import React from 'react';
+import { profile } from '../data/content';
 
 const Contact = () => {
     return (
         <section id="contact" className="py-32 px-10 container mx-auto text-center">
             <div className="max-w-4xl mx-auto">
                 <div className="inline-block bg-motion-orange text-black px-3 py-1 font-bold uppercase text-sm mb-6 -rotate-2">
-                    Disponible pour projet / alternance
+                    Disponible pour projet
                 </div>
 
                 <h2 className="text-[8vw] leading-[0.85] font-bold uppercase mb-12">
@@ -24,8 +25,8 @@ const Contact = () => {
                 </a>
 
                 <div className="mt-20 flex justify-center gap-12 text-sm font-bold uppercase tracking-widest text-gray-500">
-                    <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-                    <a href="#" className="hover:text-white transition-colors">Instagram</a>
+                    <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+                    <a href={profile.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
                 </div>
             </div>
         </section>
