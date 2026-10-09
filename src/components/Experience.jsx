@@ -49,6 +49,14 @@ const localExperiences = [
         period: "Mars 2024",
         description: "Produire les designs de jeux de société et monter une vidéo de présentation.",
         tags: ["Game Design", "Vidéo", "Team"]
+    },
+    {
+        id: "casa-del-gusto",
+        role: "Marathon MMI",
+        company: "La Casa del Gusto",
+        period: "Janv 2024",
+        description: "Refonte de logo et production de la charte graphique.",
+        tags: ["Branding", "Identité"]
     }
 ];
 
