@@ -31,7 +31,7 @@ const ProjectDetail = () => {
 
             {/* Hero Section */}
             <section className="container mx-auto pt-10 md:pt-20 pb-10 md:pb-12 px-5 sm:px-8 lg:px-10">
-                <h1 className="text-[clamp(2.75rem,10vw,10rem)] leading-[0.85] font-oswald uppercase font-black mb-6 md:mb-8 w-full break-words">
+                <h1 className="text-[clamp(2.75rem,10vw,10rem)] leading-[1.2] font-oswald uppercase font-black mb-6 md:mb-8 w-full break-words">
                     {project.title} <br />
                     <span className="text-[clamp(1.5rem,6vw,6rem)] text-gray-400">{project.subtitle}</span>
                 </h1>

@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       {isHome && (
         <footer className="container mx-auto px-5 sm:px-8 lg:px-10 pb-8 md:pb-10 flex justify-between text-xs text-gray-500 font-medium uppercase tracking-wide">
           <div>Besson Gwenaëlle</div>
-          <div>©'25</div>
+          <div>©'26</div>
         </footer>
       )}
     </div>

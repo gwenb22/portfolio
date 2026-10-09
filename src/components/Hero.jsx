@@ -9,7 +9,7 @@ const Hero = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <h1 className="text-[clamp(2.75rem,9vw,7.5rem)] leading-[0.85] font-bold text-left tracking-tighter mb-8 md:mb-12">
+                <h1 className="text-[clamp(2.75rem,9vw,7.5rem)] leading-[1.2] font-bold text-left tracking-tighter mb-8 md:mb-12">
                     Communication. Création. Digital.
                 </h1>
             </motion.div>

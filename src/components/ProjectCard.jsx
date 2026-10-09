@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { ArrowUpRight } from 'lucide-react';
 import Sticker from './Sticker';
 
 const ProjectCard = ({ id, title, category, color, image, cardImage, year, alignRight }) => {
@@ -24,7 +25,7 @@ const ProjectCard = ({ id, title, category, color, image, cardImage, year, align
                         {category}
                     </span>
                     <div className="shrink-0 w-10 h-10 bg-white border-2 border-black rounded-full flex items-center justify-center">
-                        <span className="text-xl text-black">↗</span>
+                        <ArrowUpRight className="w-5 h-5 text-black" strokeWidth={2.5} aria-hidden="true" />
                     </div>
                 </div>
 
@@ -46,14 +47,14 @@ const ProjectCard = ({ id, title, category, color, image, cardImage, year, align
                 </div>
 
                 {/* Footer Info */}
-                <div className="relative xl:pr-28">
-                    <h3 className={`font-oswald text-3xl sm:text-4xl xl:text-5xl uppercase leading-[0.85] mb-2 break-words ${displayImage ? 'text-black' : 'text-white'}`}>{title}</h3>
+                <div className="relative pr-24 sm:pr-28">
+                    <h3 className={`font-oswald text-3xl sm:text-4xl xl:text-5xl uppercase leading-[0.95] mb-2 break-words ${displayImage ? 'text-black' : 'text-white'}`}>{title}</h3>
                     <p className={`font-inter text-sm font-medium ${displayImage ? 'text-black/70' : 'text-text-secondary'}`}>{year}</p>
                 </div>
 
-                {/* Decorative Sticker (only on wide cards, where the title leaves room for it) */}
+                {/* Decorative Sticker (the footer keeps right padding so it never covers the title) */}
                 <Sticker
-                    className={`absolute bottom-8 right-8 w-24 h-24 bg-${domainColor} rounded-full hidden xl:flex items-center justify-center text-[10px] text-center p-2 leading-tight z-10 text-black border-2 border-black`}
+                    className={`absolute bottom-5 right-5 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 w-20 h-20 sm:w-24 sm:h-24 bg-${domainColor} rounded-full flex items-center justify-center text-[10px] text-center p-2 leading-tight z-10 text-black border-2 border-black`}
                     rotation={10}
                     delay={0.2}
                 >
