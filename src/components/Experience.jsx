@@ -4,10 +4,10 @@ import React from 'react';
 const localExperiences = [
     {
         id: "cave-gabi",
-        role: "Chargée de communication (Stage)",
+        role: "Chargée de com (Stage)",
         company: "La Cave de Gabi",
         period: "Févr - Avril 2026",
-        description: "Création et animation des comptes sociaux de l'entreprise. Création de contenus : publications réseaux sociaux, newsletters et supports visuels. Maintenance du site internet et développement d'outils web. Relation client : suivi des demandes et adaptation des supports aux besoins.",
+        description: "Création et animation des RS, newsletters et visuels. Maintenance du site web et développement d'outils. Relation client.",
         tags: ["Réseaux sociaux", "Newsletters", "Web"]
     },
     {
@@ -15,23 +15,23 @@ const localExperiences = [
         role: "Communication, graphisme & web",
         company: "Freelance",
         period: "Sept 2025 - Présent",
-        description: "Création de contenus : posts réseaux sociaux, articles de blog, newsletters et visuels. Gestion d'outils digitaux : CRM, segmentation de prospects, maintenance de sites. Gestion de projets en autonomie, relation client et respect des délais.",
-        tags: ["Autonomie", "Gestion client", "CRM"]
+        description: "Gestion de projets clients, relationnel, livrables (Logos, Sites Web, Supports de com). Approche orientée solutions.",
+        tags: ["Autonomie", "Gestion Client"]
     },
     {
         id: "terra-hominis",
-        role: "Assistante com, marketing & événementiel (Stage puis CDD)",
+        role: "Assistante com & événementiel (Stage/CDD)",
         company: "Terra Hominis",
         period: "Avril - Août 2025",
-        description: "Rédaction de contenus pour les réseaux sociaux, articles de blog et newsletters. Organisation d'événements, création de visuels et de supports de communication. Refonte et maintenance du site internet. Gestion et organisation de données clients via CRM.",
-        tags: ["Com 360", "Événementiel", "CRM", "Web"]
+        description: "Réalisation de posts RS, articles de blog, newsletters. Gestion CRM, segmentation prospects. Organisation d'événements et création de visuels. Maintenance et refonte pages web.",
+        tags: ["Com 360", "CRM", "Web"]
     },
     {
         id: "hackathon-2025",
         role: "Pilotage du groupe communication",
         company: "Hackathon - IUT de Béziers",
         period: "Mars 2025",
-        description: "Pilotage d'un groupe de 8 étudiants chargé de la communication globale de l'événement. Création et diffusion de contenus digitaux, audiovisuels et graphiques sur 4 jours. Scénarisation et gestion technique de la cérémonie de clôture (2 h) au Palais des congrès de Béziers.",
+        description: "Pilotage d'un groupe de 8 étudiants pour la com de l'événement. Contenus digitaux et audiovisuels sur 4 jours, cérémonie de clôture au Palais des congrès.",
         tags: ["Gestion de projet", "Audiovisuel", "Événementiel"]
     },
     {
@@ -39,7 +39,7 @@ const localExperiences = [
         role: "Marathon MMI - Grand Prix",
         company: "Félines-Minervois",
         period: "Février 2025",
-        description: "Création de la charte graphique de la commune. Conception de flyers et supports de communication.",
+        description: "Création de la charte graphique et conception de flyers pour la commune.",
         tags: ["Graphisme", "Identité Visuelle", "Print"]
     },
     {
@@ -47,7 +47,7 @@ const localExperiences = [
         role: "Hackathon - Grand Prix",
         company: "Kimiyo",
         period: "Mars 2024",
-        description: "Conception des designs et visuels de jeux de société. Montage d'une vidéo de présentation du projet.",
+        description: "Produire les designs de jeux de société et monter une vidéo de présentation.",
         tags: ["Game Design", "Vidéo", "Team"]
     }
 ];
