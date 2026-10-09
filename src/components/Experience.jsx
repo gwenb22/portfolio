@@ -49,31 +49,31 @@ const Experience = () => {
     if (!localExperiences) return null;
 
     return (
-        <section className="py-20 px-10 container mx-auto">
-            <div className="flex items-end gap-4 mb-16 border-b border-gray-800 pb-4">
-                <h2 className="text-[6vw] leading-none font-bold uppercase">
+        <section className="py-12 md:py-20">
+            <div className="flex items-end gap-4 mb-10 md:mb-16 border-b border-gray-800 pb-4">
+                <h2 className="text-[clamp(2.5rem,6vw,6rem)] leading-none font-bold uppercase">
                     Expériences
                 </h2>
                 <span className="mb-2 text-design-cyan text-4xl hidden md:block">↓</span>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-12">
+            <div className="max-w-4xl mx-auto space-y-10 md:space-y-12">
                 {localExperiences.map((exp, index) => (
                     <div key={exp.id || index} className="relative pl-8 md:pl-0">
                         {/* Mobile Timeline Line */}
                         <div className="absolute left-0 top-2 bottom-0 w-0.5 bg-gray-800 md:hidden"></div>
                         <div className="absolute left-[-5px] top-2 w-3 h-3 bg-design-cyan rounded-full md:hidden"></div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 group">
+                        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-3 md:gap-8 group">
                             {/* Period */}
-                            <div className="font-oswald text-xl text-gray-400 uppercase tracking-wide md:text-right pt-1 group-hover:text-white transition-colors">
+                            <div className="font-oswald text-lg md:text-xl text-gray-400 uppercase tracking-wide md:text-right pt-1 group-hover:text-white transition-colors">
                                 {exp.period}
                             </div>
 
                             {/* Content */}
-                            <div className={`bg-[#1a1a1a] p-6 rounded-lg border border-gray-800 transition-all hover:translate-x-2 ${exp.theme?.hover || 'hover:border-design-cyan'}`}>
+                            <div className={`bg-[#1a1a1a] p-5 md:p-6 rounded-lg border border-gray-800 transition-all hover:translate-x-2 ${exp.theme?.hover || 'hover:border-design-cyan'}`}>
                                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                                    <h3 className="text-2xl font-bold uppercase">{exp.company}</h3>
+                                    <h3 className="text-xl md:text-2xl font-bold uppercase">{exp.company}</h3>
                                     <span className={`font-medium text-sm uppercase border px-2 py-0.5 rounded-full inline-block w-max ${exp.theme?.text || 'text-design-cyan'} ${exp.theme?.border || 'border-design-cyan'}`}>
                                         {exp.role}
                                     </span>

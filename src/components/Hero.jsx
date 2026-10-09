@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className="pt-20 pb-20 px-10 container mx-auto">
+        <section className="pt-10 pb-14 md:pt-20 md:pb-20 px-5 sm:px-8 lg:px-10 container mx-auto">
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <h1 className="text-[6vw] leading-[0.85] font-bold text-left tracking-tighter mb-12">
+                <h1 className="text-[clamp(2.75rem,9vw,7.5rem)] leading-[0.85] font-bold text-left tracking-tighter mb-8 md:mb-12">
                     Communication. Création. Digital.
                 </h1>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl text-gray-300 text-sm md:text-base leading-relaxed">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 max-w-6xl text-gray-300 text-base leading-relaxed">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

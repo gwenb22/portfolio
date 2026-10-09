@@ -36,7 +36,7 @@ const Gallery = ({ images, projectColor = 'design-cyan' }) => {
     return (
         <>
             {/* Gallery Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {images.map((img, i) => {
                     const imgSrc = typeof img === 'string' ? img : img.src;
                     const caption = typeof img === 'object' ? img.caption : null;
@@ -54,7 +54,7 @@ const Gallery = ({ images, projectColor = 'design-cyan' }) => {
                             className={`aspect-video bg-card-bg border-2 border-border-dark 
                                      hover:-translate-y-1 hover:shadow-lg cursor-pointer
                                      transition-all overflow-hidden group relative
-                                     ${isLarge ? 'md:col-span-2 lg:col-span-3 max-w-2xl mx-auto w-full' : ''}`}
+                                     ${isLarge ? 'sm:col-span-2 lg:col-span-3 max-w-2xl mx-auto w-full' : ''}`}
                         >
                             {isVideo ? (
                                 <video
@@ -108,13 +108,13 @@ const Gallery = ({ images, projectColor = 'design-cyan' }) => {
                             <>
                                 <button
                                     onClick={prevImage}
-                                    className="absolute left-4 text-white text-6xl hover:text-gray-300 z-10"
+                                    className="absolute left-1 md:left-4 w-12 h-12 md:w-auto md:h-auto flex items-center justify-center rounded-full bg-black/50 md:bg-transparent text-white text-4xl md:text-6xl hover:text-gray-300 z-10"
                                 >
                                     ‹
                                 </button>
                                 <button
                                     onClick={nextImage}
-                                    className="absolute right-4 text-white text-6xl hover:text-gray-300 z-10"
+                                    className="absolute right-1 md:right-4 w-12 h-12 md:w-auto md:h-auto flex items-center justify-center rounded-full bg-black/50 md:bg-transparent text-white text-4xl md:text-6xl hover:text-gray-300 z-10"
                                 >
                                     ›
                                 </button>

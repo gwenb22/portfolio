@@ -22,20 +22,20 @@ const ProjectDetail = () => {
     return (
         <div className="bg-[#f5f5f5] text-black min-h-screen">
             {/* Top Nav (Simplified for detail) */}
-            <div className="flex justify-between items-center py-6 px-10 border-b border-black/10">
-                <Link to="/" className="font-bold uppercase tracking-tight hover:text-gray-600">
+            <div className="flex justify-between items-center gap-4 py-4 md:py-6 px-5 sm:px-8 lg:px-10 border-b border-black/10">
+                <Link to="/" className="shrink-0 font-bold uppercase tracking-tight hover:text-gray-600">
                     ← Retour à l'accueil
                 </Link>
-                <div className="font-oswald uppercase font-bold">{project.title}</div>
+                <div className="hidden sm:block font-oswald uppercase font-bold truncate">{project.title}</div>
             </div>
 
             {/* Hero Section */}
-            <section className="container mx-auto pt-20 pb-12 px-10">
-                <h1 className="text-[10vw] leading-[0.8] font-oswald uppercase font-black mb-8 w-full break-words">
+            <section className="container mx-auto pt-10 md:pt-20 pb-10 md:pb-12 px-5 sm:px-8 lg:px-10">
+                <h1 className="text-[clamp(2.75rem,10vw,10rem)] leading-[0.85] font-oswald uppercase font-black mb-6 md:mb-8 w-full break-words">
                     {project.title} <br />
-                    <span className="text-[6vw] text-gray-400">{project.subtitle}</span>
+                    <span className="text-[clamp(1.5rem,6vw,6rem)] text-gray-400">{project.subtitle}</span>
                 </h1>
-                <div className={`${project.color} w-full h-[60vh] rounded-lg overflow-hidden relative mb-12 border-2 border-black flex items-center justify-center`}>
+                <div className={`${project.color} w-full h-[50vh] md:h-[60vh] rounded-lg overflow-hidden relative mb-8 md:mb-12 border-2 border-black flex items-center justify-center`}>
                     {/* Placeholder for real images */}
                     {project.image ? (
                         <img
@@ -44,20 +44,20 @@ const ProjectDetail = () => {
                             className="max-h-[70%] max-w-[80%] object-contain drop-shadow-2xl"
                         />
                     ) : (
-                        <div className="text-black/20 font-oswald text-6xl uppercase p-4 text-center">
+                        <div className="text-black/20 font-oswald text-4xl md:text-6xl uppercase p-4 text-center">
                             {project.title} Visuel
                         </div>
                     )}
                     {/* Tag */}
-                    <div className="absolute bottom-6 right-6 bg-white px-3 py-1 text-xs font-bold uppercase border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <div className="absolute bottom-3 right-3 md:bottom-6 md:right-6 bg-white px-3 py-1 text-xs font-bold uppercase border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                         {project.heroTag} / {project.year}
                     </div>
                 </div>
             </section>
 
             {/* Info Bar - Role & Skills */}
-            <section className="border-t border-b border-black/10 py-8 bg-white">
-                <div className="container mx-auto px-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <section className="border-t border-b border-black/10 py-6 md:py-8 bg-white">
+                <div className="container mx-auto px-5 sm:px-8 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                     <div>
                         <h4 className="text-xs uppercase text-gray-500 mb-1">Rôle</h4>
                         <p className="font-bold uppercase text-sm md:text-base">{project.role}</p>
@@ -78,17 +78,17 @@ const ProjectDetail = () => {
             </section>
 
             {/* Context & Objectives */}
-            <section className="py-24 container mx-auto px-10 max-w-5xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <section className="py-16 md:py-24 container mx-auto px-5 sm:px-8 lg:px-10 max-w-5xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
                     <div>
-                        <h2 className="text-5xl font-oswald uppercase font-bold mb-8">
+                        <h2 className="text-4xl md:text-5xl font-oswald uppercase font-bold mb-6 md:mb-8">
                             Le <span className="text-design-cyan italic">Contexte</span>
                         </h2>
-                        <p className="text-xl leading-relaxed text-gray-800">
+                        <p className="text-lg md:text-xl leading-relaxed text-gray-800">
                             {project.context}
                         </p>
                     </div>
-                    <div className="bg-white p-8 border-l-4 border-black">
+                    <div className="bg-white p-6 md:p-8 border-l-4 border-black">
                         <h3 className="font-bold uppercase text-xl mb-6">Objectifs</h3>
                         <ul className="space-y-4">
                             {project.objectives && project.objectives.map((obj, i) => (
@@ -103,15 +103,15 @@ const ProjectDetail = () => {
             </section>
 
             {/* Missions (Role) - Dark Section */}
-            <section className="bg-[#111] text-white py-24">
-                <div className="container mx-auto px-10">
-                    <h2 className="text-6xl font-oswald uppercase font-bold mb-16 text-center">
+            <section className="bg-[#111] text-white py-16 md:py-24">
+                <div className="container mx-auto px-5 sm:px-8 lg:px-10">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-oswald uppercase font-bold mb-10 md:mb-16 text-center">
                         Missions & <br /> <span className="text-outline text-white">Réalisations</span>
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
                         {project.missions && project.missions.map((mission, i) => (
-                            <div key={i} className="bg-[#222] p-8 border border-gray-800 rounded-lg hover:border-design-cyan transition-colors group">
+                            <div key={i} className="bg-[#222] p-6 md:p-8 border border-gray-800 rounded-lg hover:border-design-cyan transition-colors group">
                                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform origin-left">✦</div>
                                 <h4 className="text-xl font-bold uppercase mb-2">{mission}</h4>
                             </div>
@@ -122,8 +122,8 @@ const ProjectDetail = () => {
 
             {/* Gallery Section */}
             {project.gallery && project.gallery.length > 0 && (
-                <section className="py-24 container mx-auto px-10">
-                    <h2 className="text-6xl font-oswald uppercase font-bold mb-16 text-left">
+                <section className="py-16 md:py-24 container mx-auto px-5 sm:px-8 lg:px-10">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-oswald uppercase font-bold mb-10 md:mb-16 text-left">
                         <span className="bg-design-cyan px-2 text-black">Galerie</span>
                     </h2>
                     <Gallery images={project.gallery} projectColor={project.color} />
@@ -131,8 +131,8 @@ const ProjectDetail = () => {
             )}
 
             {/* Results / Solution */}
-            <section className="py-24 container mx-auto px-10 text-center max-w-4xl">
-                <h2 className="text-6xl font-oswald uppercase font-bold mb-12">
+            <section className="py-16 md:py-24 container mx-auto px-5 sm:px-8 lg:px-10 text-center max-w-4xl">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-oswald uppercase font-bold mb-8 md:mb-12">
                     <span className="bg-ecomm-yellow px-2 text-black">Résultats</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -145,10 +145,10 @@ const ProjectDetail = () => {
             </section>
 
             {/* Footer / Next Project */}
-            <Link to={`/project/${nextProject.id}`} className="block bg-black text-white py-32 text-center hover:bg-[#222] transition-colors group relative overflow-hidden">
+            <Link to={`/project/${nextProject.id}`} className="block bg-black text-white py-20 md:py-32 px-5 text-center hover:bg-[#222] transition-colors group relative overflow-hidden">
                 <div className="relative z-10">
                     <div className="text-xs text-gray-500 uppercase mb-4 tracking-widest">Projet suivant</div>
-                    <h2 className="text-[6vw] font-oswald uppercase font-bold leading-none translate-y-0 group-hover:-translate-y-2 transition-transform">
+                    <h2 className="text-[clamp(2.25rem,6vw,6rem)] font-oswald uppercase font-bold leading-none translate-y-0 group-hover:-translate-y-2 transition-transform">
                         {nextProject.title} <span className="text-design-cyan">→</span>
                     </h2>
                 </div>

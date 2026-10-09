@@ -14,21 +14,21 @@ const AboutPage = () => {
     }, []);
 
     return (
-        <div className="min-h-screen pt-12 pb-20 bg-[#111111] text-white">
-            <div className="container mx-auto px-10">
+        <div className="min-h-screen pt-6 md:pt-12 pb-10 md:pb-20 bg-[#111111] text-white">
+            <div className="container mx-auto px-5 sm:px-8 lg:px-10">
                 {/* Nav Back */}
-                <div className="mb-10">
-                    <Link to="/" className="font-bold uppercase tracking-tight hover:text-gray-400 mb-8 inline-block">
+                <div className="mb-6 md:mb-10">
+                    <Link to="/" className="font-bold uppercase tracking-tight hover:text-gray-400 inline-block">
                         ← Retour à l'accueil
                     </Link>
                 </div>
 
                 {/* Split Layout: Photo (Left) vs Content (Right) */}
                 {/* Reduced photo column width to 30% approx */}
-                <div className="grid grid-cols-1 lg:grid-cols-[30%_1fr] gap-12 mb-32 items-start max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-[30%_1fr] gap-10 lg:gap-12 mb-16 md:mb-32 items-start max-w-6xl mx-auto">
 
                     {/* Left: Photo */}
-                    <div className="relative w-full aspect-[3/4] border-4 border-white/10 overflow-hidden bg-[#1a1a1a]">
+                    <div className="relative w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] border-4 border-white/10 overflow-hidden bg-[#1a1a1a]">
                         {profileImage ? (
                             <img
                                 src={profileImage}
@@ -44,21 +44,21 @@ const AboutPage = () => {
 
                     {/* Right: Bio & Stickers */}
                     <div className="flex flex-col h-full pl-0 lg:pl-10">
-                        <h1 className="text-6xl md:text-8xl font-oswald font-bold uppercase mb-8 leading-[0.85]">
+                        <h1 className="text-5xl sm:text-6xl md:text-8xl font-oswald font-bold uppercase mb-6 md:mb-8 leading-[0.85]">
                             À Propos
                         </h1>
 
-                        <div className="text-xl leading-relaxed text-gray-300 mb-12 max-w-2xl font-medium">
+                        <div className="text-lg md:text-xl leading-relaxed text-gray-300 mb-10 md:mb-12 max-w-2xl font-medium">
                             {profile.bio.map((p, i) => (
                                 <p key={i} className="mb-6">{p}</p>
                             ))}
                         </div>
 
-                        {/* Stickers Cloud - Organized Grid */}
-                        <div className="relative w-full mt-auto grid grid-cols-2 lg:grid-cols-4 gap-4 items-center">
+                        {/* Stickers Cloud - wraps to fit any width */}
+                        <div className="relative w-full mt-auto flex flex-wrap justify-center lg:justify-start gap-4 items-center">
 
                             <Sticker
-                                className="relative bg-design-cyan w-40 h-40 flex items-center justify-center text-center p-4 shadow-xl"
+                                className="relative bg-design-cyan w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center text-center p-4 shadow-xl"
                                 rotation={-2}
                                 delay={0.1}
                             >
@@ -79,7 +79,7 @@ const AboutPage = () => {
                             </Sticker>
 
                             <Sticker
-                                className="relative bg-ecomm-yellow text-black w-48 p-4 shadow-xl"
+                                className="relative bg-ecomm-yellow text-black w-44 sm:w-48 p-4 shadow-xl"
                                 rotation={-1}
                                 delay={0.3}
                             >
@@ -88,7 +88,7 @@ const AboutPage = () => {
                             </Sticker>
 
                             <Sticker
-                                className="relative bg-[#a3e635] text-black w-36 h-36 rounded-full flex items-center justify-center border-2 border-black shadow-xl"
+                                className="relative bg-[#a3e635] text-black w-32 h-32 sm:w-36 sm:h-36 rounded-full flex items-center justify-center border-2 border-black shadow-xl"
                                 rotation={-5}
                                 delay={0.5}
                             >
@@ -102,7 +102,7 @@ const AboutPage = () => {
                 </div>
 
                 {/* Expériences */}
-                <div className="border-t-4 border-white/10 pt-20 mb-32 max-w-6xl mx-auto">
+                <div className="border-t-4 border-white/10 pt-6 md:pt-10 mb-16 md:mb-32 max-w-6xl mx-auto">
                     <Experience />
                 </div>
 
@@ -111,9 +111,9 @@ const AboutPage = () => {
                     <a
                         href={cvFile}
                         download="CV_Gwenaelle_Besson.pdf"
-                        className="relative w-full max-w-xl mx-auto block bg-ecomm-yellow text-black py-4 px-6 border-4 border-transparent hover:border-white transition-all transform hover:-translate-y-1 group cursor-pointer mb-20 origin-center -rotate-1 md:-rotate-0"
+                        className="relative w-full max-w-xl mx-auto block bg-ecomm-yellow text-black py-4 px-5 sm:px-6 border-4 border-transparent hover:border-white transition-all transform hover:-translate-y-1 group cursor-pointer mb-10 md:mb-20 origin-center -rotate-1 md:-rotate-0"
                     >
-                        <div className="flex justify-between items-center gap-6">
+                        <div className="flex justify-between items-center gap-4 sm:gap-6">
                             <h2 className="text-2xl md:text-3xl font-oswald font-bold uppercase tracking-tighter">
                                 Télécharger mon CV
                             </h2>
